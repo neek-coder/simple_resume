@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            background-color: #0d0d0d;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        #avatar {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 2px solid #8a8a8a;
+        }
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+       
+        .project {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 12px;
+            width: 280px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100%;
+            min-height: 320px;
+        }
+        
+        .project a {
+            margin-top: auto; /* Pushes the button to the bottom */
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #ffffff;
+            color: #0d0d0d;
+            text-decoration: none;
+            font-weight: 500;
+            border-radius: 8px;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+        
+        .project:hover {
+            transform: scale(1.05);
+        }
+        .project img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .project h3 {
+            margin: 10px 0 5px;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        .project p {
+            font-size: 0.9rem;
+            color: #b0b0b0;
+            margin-bottom: 15px;
+        }
+        
+        .project a:hover {
+            background-color: #b0b0b0;
+            color: #0d0d0d;
+        }
+
+        .tags {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin: 10px 0;
+            flex-wrap: wrap;
+        }
+        
+        .tags li {
+            background: #222;
+            color: #888;
+            font-size: 0.8rem;
+            padding: 5px 10px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img id="avatar" src="src/avatar.jpg" alt="My Avatar">
+        <h2>My Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <img src="src/project_InFasting.png" alt="Project 1">
+                <h3>InFasting: Fasting Tracker</h3>
+                <ul class="tags">
+                    <li>Flutter</li>
+                    <li>Firebase</li>
+                    <li>RevenueCat</li>
+                    <li>Facebook SDK</li>
+                </ul>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project">
+                <img src="src/project_TheRedPuzzle.png" alt="Project 1">
+                <h3>The Red Puzzle</h3>
+                <ul class="tags">
+                    <li>Unity</li>
+                    <li>C#</li>
+                    <li>Unity Ads</li>
+                </ul>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project">
+                <img src="src/project_BallSort3D.png" alt="Project 1">
+                <h3>Ball Sort 3D</h3>
+                <ul class="tags">
+                    <li>Unity</li>
+                    <li>C#</li>
+                    <li>Unity Ads</li>
+                    <li>Amplitude</li>
+                </ul>
+                <a href="https://play.google.com/store/apps/details?id=com.ball.sort.puzzle.color.sortpuz.sorting.getcolor.tube.bottle.bubble.games.free.offline">View Project</a>
+            </div>
+           
+        </div>
+    </div>
+</body>
+</html>
